@@ -9,7 +9,7 @@ function Header({toggleSidebar}) {
       <GiHamburgerMenu />
       </p>
       </div>
-      <h2>MEU APLICATIVO MARAVILHOSO</h2>
+      <h2>MEU APLICATIVO MARAVILHOSO - PRIMEIRO TESTE DE HOJE 19/11/2025</h2>
     </header>
   );
 }
