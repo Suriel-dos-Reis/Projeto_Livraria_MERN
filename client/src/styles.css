@@ -68,13 +68,8 @@ a {
 .header_nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* centraliza horizontalmente */
   background-color: #5a6bad;
-  /* seu exemplo */
-  height: 60px;
-  position: relative;
-  /* permite usar posicionamento interno */
+  padding: 10px;
 }
 
 /*.header_left {
@@ -83,9 +78,7 @@ a {
 }*/
 
 .header_left {
-  position: absolute;
-  left: 20px;
-  /* fixa o menu no canto esquerdo */
+  margin-right: 20px; /* AQUI está o espaçamento */
 }
 
 /*.header-btn {
@@ -95,6 +88,12 @@ a {
 .header-btn {
   cursor: pointer;
   font-size: 24px;
+}
+
+.header_nav h2 {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
 }
 
 .menu-btn {
