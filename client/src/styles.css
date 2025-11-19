@@ -77,13 +77,24 @@ a {
   /* permite usar posicionamento interno */
 }
 
-.header_left {
+/*.header_left {
   display: flex;
   align-items: center;
+}*/
+
+.header_left {
+  position: absolute;
+  left: 20px;
+  /* fixa o menu no canto esquerdo */
 }
 
-.header-btn {
+/*.header-btn {
   margin-left: 20%;
+}*/
+
+.header-btn {
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .menu-btn {
