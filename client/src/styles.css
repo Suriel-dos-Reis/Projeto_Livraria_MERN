@@ -55,7 +55,7 @@ a {
   color: white;
 }
 
-.header_nav {
+/*.header_nav {
   background-color: #5767aa;
   height: 80px;
   color: white;
@@ -63,6 +63,18 @@ a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
+}*/
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* centraliza horizontalmente */
+  background-color: #5a6bad;
+  /* seu exemplo */
+  height: 60px;
+  position: relative;
+  /* permite usar posicionamento interno */
 }
 
 .header_left {
