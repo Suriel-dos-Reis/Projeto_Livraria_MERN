@@ -28,11 +28,11 @@ function ShowBookList() {
 
   return (
     <div className="book-list">
-       <h2 className="book-list-header">Books List</h2>
+       <h2 className="book-list-header">Lista de livros</h2>
 
       <Link to="/create-book" className="link-create-book">
         <button type="button" className="btn-create-book btn">
-          Add New Book
+          Incluir livro
         </button>
       </Link>
       

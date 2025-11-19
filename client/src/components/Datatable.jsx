@@ -23,10 +23,10 @@ const Datatable = ({ books}) => {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Title</th>
+          <th>Título</th>
           <th>Isbn</th>
-          <th>Author</th>
-          <th>Actions</th>          
+          <th>Autor</th>
+          <th>Opções</th>          
         </tr>
       </thead>
       <tbody>

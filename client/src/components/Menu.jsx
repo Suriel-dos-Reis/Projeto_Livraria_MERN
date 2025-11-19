@@ -13,7 +13,7 @@ function Menu({ toggleSidebar }) {
           <Link to="/">⭐ - Show BooK List</Link>
         </li>
         <li>
-          <Link to="/create-book">🦸🏽‍♂️ - Add New Book</Link>
+          <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
         </li>
         <li>
           <Link to="">🖌️ - Novo Link 1</Link>
