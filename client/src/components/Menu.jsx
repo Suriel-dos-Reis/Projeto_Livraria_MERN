@@ -9,7 +9,6 @@ function Menu({ toggleSidebar }) {
             <span className="menu-btn" onClick={toggleSidebar}>
                 <RiCloseLargeFill />
             </span>
-            <h1 className="logo">LOGO</h1>
             <h1 className="logo">
                 <img src={logo} alt="Logo" className="logo-img" />
             </h1>
