@@ -18,18 +18,19 @@ function ShowBookDetails(props) {
         setBook(res.data);
       })
       .catch((err) => {
-        console.log("Error from ShowBookDetails");
+        console.log("Erro no formulário ShowBookDetails");
       });
   }, [id]);
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      //.delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`${apiUrl}/api/books/${id}`)
       .then((res) => {
         navigate("/");
       })
       .catch((err) => {
-        console.log("Error form ShowBookDetails_deleteClick");
+        console.log("Erro no formulário ShowBookDetails_deleteClick");
       });
   };
 

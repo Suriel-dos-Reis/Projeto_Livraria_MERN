@@ -19,6 +19,9 @@ function Menu({ toggleSidebar }) {
                     <i className="fa-solid fa-star"></i>
                 </li>
                 <li>
+                    <Link to="/"><i className="fa-solid fa-star"></i> - Lista de Livros - suriel</Link>
+                </li>
+                <li>
                     <Link to="/">⭐ - Lista de Livros</Link>
                 </li>
                 <li>
