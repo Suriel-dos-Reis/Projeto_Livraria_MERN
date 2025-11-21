@@ -10,7 +10,7 @@ function Menu({ toggleSidebar }) {
       <h1 className="logo">LOGO</h1>
       <nav>
         <li>
-          <Link to="/">⭐ - Show BooK List</Link>
+          <Link to="/">⭐ - Lista de Livros</Link>
         </li>
         <li>
           <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
