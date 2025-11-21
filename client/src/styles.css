@@ -16,9 +16,14 @@
 }
 
 .logo {
-  max-width: 180px;
+  /*max-width: 180px;
   width: 100%;
-  display: block;
+  display: block;*/
+
+  max-width: 150px;
+  max-height: 150px;
+  width: 100%;
+  object-fit: contain;
 }
 .layout {
   display: grid;
