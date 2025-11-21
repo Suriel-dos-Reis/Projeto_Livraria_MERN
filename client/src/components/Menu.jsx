@@ -22,6 +22,9 @@ function Menu({ toggleSidebar }) {
                     <Link to="/"><i className="fa-solid fa-star" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
                 </li>
                 <li>
+                    <Link to="/"><i className="fa-solid fa-list" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
+                </li>
+                <li>
                     <Link to="/">⭐ - Lista de Livros</Link>
                 </li>
                 <li>
