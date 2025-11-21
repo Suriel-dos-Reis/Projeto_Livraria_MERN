@@ -13,22 +13,13 @@ function Menu({ toggleSidebar }) {
             </h1>
             <nav>
                 <li>
-                    <i className="fa-solid fa-house"></i> Home
-                </li>
-                <li>
-                    <i className="fa-solid fa-star"></i>
-                </li>
-                <li>
-                    <Link to="/"><i className="fa-solid fa-star" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
-                </li>
-                <li>
                     <Link to="/"><i className="fa-solid fa-list" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
                 </li>
                 <li>
-                    <Link to="/">⭐ - Lista de Livros</Link>
+                    <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
                 </li>
                 <li>
-                    <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
+                    <Link to="/create-book"><i className="fa-solid fa-book-open" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
                 </li>
                 <li>
                     <Link to="/ShowBookDetails">🖌️ - Lista detalhes do livro</Link>
