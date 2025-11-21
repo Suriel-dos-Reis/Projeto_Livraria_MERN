@@ -2,6 +2,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 
+
 function Menu({ toggleSidebar }) {
     return (
         <div className="menu">
