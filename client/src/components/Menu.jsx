@@ -13,7 +13,10 @@ function Menu({ toggleSidebar }) {
             </h1>
             <nav>
                 <li>
-                    <i class="fa-solid fa-house"></i> Home
+                    <i className="fa-solid fa-house"></i> Home
+                </li>
+                <li>
+                    <i className="fa-solid fa-star"></i>
                 </li>
                 <li>
                     <Link to="/">⭐ - Lista de Livros</Link>
@@ -22,10 +25,10 @@ function Menu({ toggleSidebar }) {
                     <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
                 </li>
                 <li>
-                    <Link to="">🖌️ - Novo Link 1</Link>
+                    <Link to="/ShowBookDetails">🖌️ - Lista detalhes do livro</Link>
                 </li>
                 <li>
-                    <Link to="">👌🏽 - Novo Link 2</Link>
+                    <Link to="/ShowBookList">👌🏽 - Lista de livros</Link>
                 </li>
             </nav>
         </div>
