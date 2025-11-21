@@ -1,6 +1,6 @@
 import { RiCloseLargeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import logo from "../image/logo.png";
+import logo from "../image/logov2.png";
 
 
 function Menu({ toggleSidebar }) {
