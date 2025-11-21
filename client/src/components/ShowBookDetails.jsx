@@ -77,7 +77,8 @@ function ShowBookDetails(props) {
       
       <Link to="/" className="link-show-book-list">
         <button type="button" className="btn-show-book-list btn">
-          Show BooK List
+          {/*Show BooK List*/}
+          Lista livro
         </button>
       </Link>
 
