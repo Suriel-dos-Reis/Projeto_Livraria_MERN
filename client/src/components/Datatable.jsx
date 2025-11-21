@@ -40,17 +40,17 @@ const Datatable = ({ books}) => {
               <td>
                 <Link to={`/show-book/${book._id}`}>
                   <button type="button" className="btn-show-book btn">
-                    Show
+                    Mostrar
                   </button>
                 </Link>
 
                 <Link to={`/edit-book/${book._id}`}>
                   <button type="button" className="btn-edit-book btn">
-                    Edit
+                    Editar
                   </button>
                 </Link>
 
-                <button className="btn-delete-book btn" onClick={() => onDeleteClick(book.id)}>Delete</button>
+                <button className="btn-delete-book btn" onClick={() => onDeleteClick(book.id)}>Excluir</button>
               </td>
             </tr>
           );

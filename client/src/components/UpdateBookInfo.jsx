@@ -75,13 +75,13 @@ function UpdateBookInfo(props) {
       </Link>
 
       <div className="update-book-header">
-        <h1 className="update-book-title">Edit Book</h1>
-        <p className="update-book-text">Update Book's Info</p>
+        <h1 className="update-book-title">Editar livro</h1>
+        <p className="update-book-text">Atualizar informações do livro</p>
       </div>
 
       <form className="form" noValidate onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Título</label>
           <input
             type="text"
             placeholder="Title of the Book"
@@ -105,7 +105,7 @@ function UpdateBookInfo(props) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="author">Author</label>
+          <label htmlFor="author">Autor</label>
           <input
             type="text"
             placeholder="Author"
@@ -117,7 +117,7 @@ function UpdateBookInfo(props) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description">Descrição</label>
           <textarea
             type="text"
             placeholder="Description of the Book"
@@ -129,7 +129,7 @@ function UpdateBookInfo(props) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="published_date">Published Date</label>
+          <label htmlFor="published_date">Data de publicação</label>
           <input
             type="text"
             placeholder="Published Date"
@@ -141,7 +141,7 @@ function UpdateBookInfo(props) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="publisher">Publisher</label>
+          <label htmlFor="publisher">Publicação</label>
           <input
             type="text"
             placeholder="Publisher of the Book"
