@@ -13,13 +13,10 @@ function Menu({ toggleSidebar }) {
             </h1>
             <nav>
                 <li>
-                    <Link to="/"><i className="fa-solid fa-list" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
+                    <Link to="/"><i className="fa-solid fa-list" style={{ color: "#FFD700" }}></i> - Lista de Livros</Link>
                 </li>
                 <li>
-                    <Link to="/create-book">🦸🏽‍♂️ - Incluir livro</Link>
-                </li>
-                <li>
-                    <Link to="/create-book"><i className="fa-solid fa-book-open" style={{ color: "#FFD700" }}></i> - Lista de Livros - suriel</Link>
+                    <Link to="/create-book"><i className="fa-solid fa-book-open" style={{ color: "#FFD700" }}></i> - Incluir livro</Link>
                 </li>
                 <li>
                     <Link to="/ShowBookDetails">🖌️ - Lista detalhes do livro</Link>
