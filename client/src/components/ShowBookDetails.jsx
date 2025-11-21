@@ -83,8 +83,8 @@ function ShowBookDetails(props) {
       </Link>
 
       <div className="book-detail-header">
-        <h1 className="book-detail-header">Book's Record</h1>
-        <p className="book-detail-text">View Book's Info</p>
+        <h1 className="book-detail-header">Atualização do livro</h1>
+        <p className="book-detail-text">Informações do livro</p>
         <br />
       </div>
 
@@ -98,12 +98,12 @@ function ShowBookDetails(props) {
             onDeleteClick(book._id);
           }}
         >
-          Delete Book
+          Excluir livro
         </button>
 
         <Link to={`/edit-book/${book._id}`}>
           <button type="button" className="btn-edit-book btn">
-            Edit Book
+            Editar livro
           </button>
         </Link>
       </div>
