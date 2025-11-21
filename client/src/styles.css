@@ -25,6 +25,8 @@
   width: 100%;
   /*object-fit: contain;*/
   display: block;
+  margin: 0;
+  padding: 0;
 }
 .layout {
   display: grid;
@@ -53,7 +55,7 @@
 
 .menu nav {
   list-style-type: none;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 a {
