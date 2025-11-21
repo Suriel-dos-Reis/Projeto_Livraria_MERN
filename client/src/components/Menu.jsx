@@ -2,7 +2,6 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "../image/logov2.png";
 
-
 function Menu({ toggleSidebar }) {
     return (
         <div className="menu">
@@ -13,6 +12,9 @@ function Menu({ toggleSidebar }) {
                 <img src={logo} alt="Logo" className="logo-img" />
             </h1>
             <nav>
+                <li>
+                    <i class="fa-solid fa-house"></i> Home
+                </li>
                 <li>
                     <Link to="/">⭐ - Lista de Livros</Link>
                 </li>
