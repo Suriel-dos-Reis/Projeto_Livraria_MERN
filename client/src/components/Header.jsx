@@ -9,6 +9,7 @@ function Header({ toggleSidebar }) {
                 </p>
             </div>
             <h2>Projeto livraria MERN</h2>
+            <DateTime />  {/* <-- ADICIONE AQUI */}            
         </header>
     );
 }
