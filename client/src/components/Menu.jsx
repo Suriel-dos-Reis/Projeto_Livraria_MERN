@@ -24,6 +24,9 @@ function Menu({ toggleSidebar }) {
                 <li>
                     <Link to="/ShowBookList">👌🏽 - Lista de livros</Link>
                 </li>
+                <li>
+                    <Link to="/">👌🏽 - Lista de livros</Link>
+                </li>
             </nav>
         </div>
     );

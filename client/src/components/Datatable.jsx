@@ -2,64 +2,73 @@ import { Link, useNavigate } from "react-router-dom";
 import "../styles.css";
 import axios from "axios";
 
-const Datatable = ({ books}) => {
+const Datatable = ({ books }) => {
+    const navi = useNavigate();
+    const apiUrl = import.meta.env.VITE_API_URL;
 
-  const navi = useNavigate();
-  const apiUrl = import.meta.env.VITE_API_URL;
+    const onDeleteClick = (id) => {
+        axios
+            .delete(`${apiUrl}/api/books/${id}`)
+            .then((res) => {
+                navi("/");
+            })
+            .catch((err) => {
+                console.log("Erro no formulário ShowBookDetails_deleteClick");
+            });
+    };
 
-  const onDeleteClick = (id) => {
-    axios
-      .delete(`${apiUrl}/api/books/${id}`)
-      .then((res) => {
-        navi("/");
-      })
-      .catch((err) => {
-        console.log("Error form ShowBookDetails_deleteClick");
-      });
-  };
+    return (
+        <table className="datatable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Isbn</th>
+                    <th>Autor</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                {books.map((book, index) => {
+                    return (
+                        <tr key={book.id}>
+                            <td>{index + 1}</td>
+                            <td>{book.title}</td>
+                            <td>{book.isbn}</td>
+                            <td>{book.author}</td>
+                            <td>
+                                <Link to={`/show-book/${book._id}`}>
+                                    <button type="button" className="btn-show-book btn">
+                                        Mostrar
+                                    </button>
+                                </Link>
 
-  return (
-    <table className="datatable">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Título</th>
-          <th>Isbn</th>
-          <th>Autor</th>
-          <th>Opções</th>          
-        </tr>
-      </thead>
-      <tbody>
-        {books.map((book, index) => {
-          return (
-            <tr key={book.id}>
-              <td>{index + 1}</td>
-              <td>{book.title}</td>
-              <td>{book.isbn}</td>
-              <td>{book.author}</td>
-              <td>
-                <Link to={`/show-book/${book._id}`}>
-                  <button type="button" className="btn-show-book btn">
-                    Mostrar
-                  </button>
-                </Link>
+                                <Link to={`/edit-book/${book._id}`}>
+                                    <button type="button" className="btn-edit-book btn">
+                                        Editar
+                                    </button>
+                                </Link>
 
-                <Link to={`/edit-book/${book._id}`}>
-                  <button type="button" className="btn-edit-book btn">
-                    Editar
-                  </button>
-                </Link>
-        
-                <button type="button" className="btn-delete-book btn" onClick={() => {onDeleteClick(book._id);}}>Excluir livro</button>
+                                <button
+                                    type="button"
+                                    className="btn-delete-book btn"
+                                    onClick={() => {
+                                        onDeleteClick(book._id);
+                                    }}
+                                >
+                                    Excluir livro
+                                </button>
 
-                <button className="btn-delete-book btn" onClick={() => onDeleteClick(book.id)}>Excluir</button>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  );
+                                <button className="btn-delete-book btn" onClick={() => onDeleteClick(book.id)}>
+                                    Excluir
+                                </button>
+                            </td>
+                        </tr>
+                    );
+                })}
+            </tbody>
+        </table>
+    );
 };
 
 export default Datatable;
