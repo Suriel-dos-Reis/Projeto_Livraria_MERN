@@ -49,6 +49,8 @@ const Datatable = ({ books}) => {
                     Editar
                   </button>
                 </Link>
+        
+                <button type="button" className="btn-delete-book btn" onClick={() => {onDeleteClick(book._id);}}>Excluir livro</button>
 
                 <button className="btn-delete-book btn" onClick={() => onDeleteClick(book.id)}>Excluir</button>
               </td>
