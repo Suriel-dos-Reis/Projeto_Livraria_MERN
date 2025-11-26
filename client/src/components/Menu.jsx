@@ -18,7 +18,7 @@ function Menu({ toggleSidebar }) {
                 <li>
                     <Link to="/create-book"><i className="fa-solid fa-book-open" style={{ color: "#FFD700" }}></i> - Incluir livro</Link>
                 </li>
-                <li>
+                {/*<li>
                     <Link to="/ShowBookDetails">🖌️ - Lista detalhes do livro</Link>
                 </li>
                 <li>
@@ -26,7 +26,7 @@ function Menu({ toggleSidebar }) {
                 </li>
                 <li>
                     <Link to="/">👌🏽 - Lista de livros</Link>
-                </li>
+                </li>*/}
             </nav>
         </div>
     );
