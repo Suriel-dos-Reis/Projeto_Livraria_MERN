@@ -31,7 +31,7 @@ const Datatable = ({ books }) => {
             <tbody>
                 {books.map((book, index) => {
                     return (
-                        <tr key={book.id}>
+                        <tr key={book._id}>
                             <td>{index + 1}</td>
                             <td>{book.title}</td>
                             <td>{book.isbn}</td>
@@ -59,9 +59,9 @@ const Datatable = ({ books }) => {
                                     Excluir livro
                                 </button>
 
-                                <button className="btn-delete-book btn" onClick={() => onDeleteClick(book._id)}>
+                                {/*<button className="btn-delete-book btn" onClick={() => onDeleteClick(book._id)}>
                                     Excluir
-                                </button>
+                                </button>*/}
                             </td>
                         </tr>
                     );
