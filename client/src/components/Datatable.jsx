@@ -53,6 +53,7 @@ const Datatable = ({ books }) => {
                                     type="button"
                                     className="btn-delete-book btn"
                                     onClick={() => {
+                                        console.log("Passei aqui");
                                         onDeleteClick(book._id);
                                     }}
                                 >
